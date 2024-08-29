@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: demoJbR
+  devtools:
+    restart:
+      log-condition-evaluation-delta: false
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql=true:
+
+server.port: 9070
+
+#Calculus Job Runner
+org.jobrunr.background-job-server.enabled: false
+org.jobrunr.background-job-server.worker-count: 1
+org.jobrunr.dashboard.enabled: false
+
+spring.main.banner-mode: off
+spring.jpa.hibernate.ddl-auto: none
+
+spring.jpa.show-sql: false
+spring.jpa.properties.hibernate.physical_naming_strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+spring.datasource.url: jdbc:postgresql://localhost:5432/test_db?autoReconnect=true&useSSL=false
+spring.datasource.username: postgres
+spring.datasource.password: mysecretpassword
