@@ -14,9 +14,9 @@ spring:
 server.port: 9070
 
 #Calculus Job Runner
-org.jobrunr.background-job-server.enabled: false
-org.jobrunr.background-job-server.worker-count: 1
-org.jobrunr.dashboard.enabled: false
+#org.jobrunr.background-job-server.enabled: false
+#org.jobrunr.background-job-server.worker-count: 1
+#org.jobrunr.dashboard.enabled: false
 
 spring.main.banner-mode: off
 spring.jpa.hibernate.ddl-auto: none
